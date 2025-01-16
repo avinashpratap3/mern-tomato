@@ -77,7 +77,7 @@ function Add({url}) {
                 <select onChange={onChangeHandler} value={data.category} name="category" id="">
                     <option value="Salad">Salad</option>
                     <option value="Rolls">Rolls</option>
-                    <option value="Desert">Desert</option>
+                    <option value="Deserts">Desert</option>
                     <option value="Sandwich">Sandwich</option>
                     <option value="Cake">Cake</option>
                     <option value="Pure Veg">Pure Veg</option>
