@@ -131,3 +131,6 @@
 .nav-profile-dropdown li:hover{
     color: tomato;
 }
+.search{
+    display: none;
+}
