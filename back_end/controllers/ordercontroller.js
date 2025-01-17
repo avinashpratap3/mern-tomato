@@ -8,7 +8,7 @@ const stripe=new Stripe(process.env.STRIPE_SECRETKEY)
 
 const placeorder =async(req,res)=>{
 
-    const front_url="http://localhost:5174"
+    const front_url="https://tomato-front.onrender.com"
     const neworder=new ordermodel({
         userid:req.body.userid,
         items:req.body.items,
