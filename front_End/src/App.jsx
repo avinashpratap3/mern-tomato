@@ -10,6 +10,11 @@ import Verify from './pages/verify/Verify'
 import Myorder from './pages/myorders/Myorder'
 
 function App() {
+   useEffect(() => {
+    
+      window.location.reload();
+    
+  }, []);
   const [showlogin,setshowlogin]=useState(false)
   return (
     <>
