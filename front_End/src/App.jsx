@@ -10,10 +10,12 @@ import Verify from './pages/verify/Verify'
 import Myorder from './pages/myorders/Myorder'
 
 function App() {
-   useEffect(() => {
-    
+ useEffect(() => {
+    const reloadPage = setTimeout(() => {
       window.location.reload();
-    
+    }, 0); // Reload immediately after the component mounts
+
+    return () => clearTimeout(reloadPage); // Clean up if component unmounts
   }, []);
   const [showlogin,setshowlogin]=useState(false)
   return (
