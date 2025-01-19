@@ -18,6 +18,8 @@ function App() {
     if (!shouldReload) {
       sessionStorage.setItem('reloaded', 'true');
       window.location.reload();
+      window.location.reload();
+      
     }
   }, []);
 
