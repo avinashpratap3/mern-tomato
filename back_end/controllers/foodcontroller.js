@@ -7,7 +7,7 @@ import fileupload from "express-fileupload"
 
 const addFood=async (req,res)=>{
     
-    console.log(req.file)
+    // console.log(req.file)
     
 
     const food=new foodmodel({
@@ -35,7 +35,7 @@ const listfood=async (req,res)=>{
     
     try{
         const foods =await foodmodel.find({});
-        console.log(foods)
+        // console.log(foods)
         res.json({success:true,data:foods})
 
     }catch(error){
